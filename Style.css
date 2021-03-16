@@ -29,6 +29,9 @@ main {
     border-top:1px dashed red;
     border-left:1px dashed red;
 }
+.Rendu{
+    margin-bottom:5px;
+}
 select {
     border : solid;
     border-color : dodgerblue;
@@ -85,4 +88,22 @@ header h1 {
     } */
 
 
-/*sélecteur de class = .    sélecteur d'id = #  -->
+/*sélecteur de class = .    sélecteur d'id = #  -->*/
+
+@media screen and (max-width:660px) {
+       img {
+        width: 100px;
+        height: 100px;
+        margin-right : 10px;
+    }
+    .ContexteCritères {
+        display: block;
+    }
+    .Contexte{
+        border-bottom:none;
+    }
+    .Critères{
+        border-top:none;
+        border-left:none;
+    }
+}
