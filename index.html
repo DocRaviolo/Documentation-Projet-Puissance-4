@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projet Puissance 4</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<!--<img src="https://joueclub-joueclub-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/0/0/c96527a95b7c54bd9d7dc81a53cf7fbe384ad55e_70439.jpeg"
+   <img src="CapturePuissance4.PNG">
+     :>-->
+<header>
+    <h1>Projet Puissance 4</h1>
+</header>
+<main>
+    <section class="Presentation">
+        <nav>
+            <form id="new-learner-form" action="index.html" method="post">
+                <label>Naviguer vers...</label>
+                <select>
+                    <option value="" disabled selected></option>
+                    <option value="1">Règles du jeu</option>
+                    <option value="2">Contexte du projet</option>
+                    <option value="3">Critères d'évaluation</option>
+                    <option value="4">Conception</option>
+                    <option value="5">Rendu</option>
+                </select>
+                <!--<button class="button" type="submit">Add</button> -->
+            </form>
+        </nav>
+        <p>Puissance 4 (appelé aussi parfois 4 en ligne) est un jeu de stratégie combinatoire abstrait, commercialisé
+            pour la première fois en 1974 par la Milton Bradley Company, plus connue sous le nom de MB et détenue depuis
+            1984
+            par la société Hasbro.</p>
+        <img src="https://joueclub-joueclub-fr-storage.omn.proximis.com/Imagestorage/imagesSynchro/0/0/c96527a95b7c54bd9d7dc81a53cf7fbe384ad55e_70439.jpeg">
+    </section>
+    <section class="Regles">
+        <h2>Règles du jeu</h2>
+        <p>Le but du jeu est d'aligner une suite de 4 pions de même couleur sur une grille comptant 6 rangées et 7
+            colonnes. Chaque joueur dispose de 21 pions d'une couleur (par convention, en général jaune ou rouge). Tour
+            à tour,
+            les deux joueurs placent un pion dans la colonne de leur choix, le pion coulisse alors jusqu'à la position
+            la
+            plus basse possible dans la dite colonne à la suite de quoi c'est à l'adversaire de jouer. Le vainqueur est
+            le
+            joueur qui réalise le premier un alignement (horizontal, vertical ou diagonal) consécutif d'au moins quatre
+            pions
+            de sa couleur. Si, alors que toutes les cases de la grille de jeu sont remplies, aucun des deux joueurs n'a
+            réalisé un tel alignement, la partie est déclarée nulle.</p>
+    </section>
+    <section class="ContexteCritères">
+        <id class="Contexte">
+            <h2>Contexte du projet</h2>
+            <p>C'est la crise sanitaire et votre entreprise vous demande de réaliser un prototype de jeu de plateau en
+                mode
+                console avant de développer sa version en réseau.
+                C'est parti pour prototyper le jeu Puissance 4 en mode console !</p>
+        </id>
+        <id class="Critères">
+            <h2>Critères d'évaluation</h2>
+            <p>Le code doit utiliser un tableau à 2 dimensions pour représenter le plateau de jeu.
+                Les erreurs de saisie de l'utilisateur.ice doivent être gérées (colonne non existante, colonne pleine,
+                ...).
+                Le programme doit informer les joueurs lorsque le jeu se termine : qui gagne / qui perd.</p>
+        </id>
+    </section>
+    <section class="Conception">
+        <h2>Conception</h2>
+        <p>La conception du code a été réalisée en plusieurs étapes :<br>
+            - génération du plateau de jeu et affichage sur la console : celui-ci a été construit avec un tableau de
+            tableau en 2 dimensions, 6 lignes x 7 colonnes.<br>
+            - déclaration des joueurs, initialisation de la partie et prise en compte des coups successifs pour mise à
+            jour du plateau de jeu.<br>
+            - vérification des conditions de victoire : la première idée était de contrôler les cases adjacentes au
+            dernier coup joué après chaque tour (à l'horizontal, à la verticale et en diagonale). La difficulté pour
+            concevoir le modèle nous a finalement conduit à opter pour un contrôle de l'ensemble du plateau de jeu après
+            chaque coup. Celui-ci se fait par l'utilisation d'une boucle for.<br>
+            - évaluation des limites du jeu: interdire le placement du pion en dehors du plateau de jeu, inviter le
+            joueur à
+            rejouer en cas d'erreur, mettre un terme à la partie en cas de victoire, etc...</p>
+        <!--<img src="CapturePuissance4.PNG">-->
+    </section>
+    <h2>Rendu</h2>
+    <p>1. Initialisation de la partie.<br>
+        2. Les joueurs sont invités à placer leurs pions à tour de rôle.<br>
+        3. Le jeu signale que le joueur a voulu placer son pion sur une case inappropriée.<br>
+        4. Un joueur a aligné 4 pions, c'est la fin de la partie !</p>
+    <section class="Rendu">
+        <section class="P4_1">
+            <img src="P4_1.PNG">
+        </section>
+        <section class="P4_2">
+            <img src="P4_2.PNG">
+        </section>
+        <section class="P4_3">
+            <img src="P4_4.PNG">
+        </section>
+        <section class="P4_4">
+            <img src="P4_3.PNG">
+        </section>
+    </section>
+    <p><a href= "https://github.com/Nadjo21/Puissance4/tree/main/src/com/company"></a></p>
+</main>
+<footer>@ Projet réalisé par la Team NadGil @</footer>
+</body>
+</html>
